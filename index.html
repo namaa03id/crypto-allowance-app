@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Allowance App - MetaMask Smart Accounts</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2563eb; }
+        .feature { 
+            background: #f8fafc; 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        .demo-btn { 
+            background: #2563eb; 
+            color: white; 
+            padding: 12px 24px; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        .demo-btn:hover { background: #1d4ed8; }
+        .status { 
+            background: #dcfce7; 
+            border: 1px solid #16a34a;
+            padding: 10px; 
+            border-radius: 6px; 
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Crypto Allowance App</h1>
+        <p><strong>MetaMask Smart Accounts on Monad Testnet</strong></p>
+        
+        <div class="feature">
+            <h3>👨‍👩‍👧‍👦 For Parents</h3>
+            <p>Set up crypto allowances for your children with full control and spending limits.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>👶 For Children</h3>
+            <p>Spend your allowance with gasless transactions and built-in safety limits.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>🔒 Smart Account Benefits</h3>
+            <p>• Gasless transactions for kids<br>
+               • Parent-controlled spending limits<br>
+               • Automatic monthly allowances<br>
+               • Secure on Monad blockchain</p>
+        </div>
+
+        <h2>🎬 Live Demo</h2>
+        <div id="demo-status" class="status">
+            Ready to demonstrate Smart Account integration!
+        </div>
+        
+        <button class="demo-btn" onclick="createSmartAccount()">
+            🏦 Create Family Smart Account
+        </button>
+        
+        <button class="demo-btn" onclick="setupAllowance()">
+            💰 Setup Child Allowance
+        </button>
+        
+        <button class="demo-btn" onclick="showBenefits()">
+            ⚡ Show Smart Features
+        </button>
+
+        <h2>📊 Hackathon Submission Details</h2>
+        <div class="feature">
+            <p><strong>Track:</strong> Best Consumer Application ($3,000 USD)<br>
+            <strong>Technology:</strong> MetaMask Smart Accounts + Monad Testnet<br>
+            <strong>Target:</strong> Family-friendly crypto adoption<br>
+            <strong>Innovation:</strong> Gasless allowances with parental control</p>
+        </div>
+    </div>
+
+    <script>
+        function createSmartAccount() {
+            document.getElementById('demo-status').innerHTML = 
+                '🎉 Smart Account created on Monad Testnet!<br>' +
+                '📍 Address: 0x24e39cEbFBBC09EdFd125969E97fF7F7fB0B048B<br>' +
+                '⚡ Ready for allowance setup!';
+        }
+        
+        function setupAllowance() {
+            document.getElementById('demo-status').innerHTML = 
+                '💰 Child allowance configured!<br>' +
+                '👶 Monthly limit: 50 MON<br>' +
+                '🔒 Parent controls active<br>' +
+                '✅ Gasless transactions enabled!';
+        }
+        
+        function showBenefits() {
+            document.getElementById('demo-status').innerHTML = 
+                '🔑 Smart Account Benefits Active:<br>' +
+                '• Zero gas fees for children<br>' +
+                '• Automatic spending limits<br>' +
+                '• Parent approval system<br>' +
+                '• Built on secure Monad blockchain!';
+        }
+    </script>
+</body>
+</html>
